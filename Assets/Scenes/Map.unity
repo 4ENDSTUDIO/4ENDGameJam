@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartGrid
       objectReference: {fileID: 0}
+    - target: {fileID: 8095506989523476969, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8095506989523476975, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -316,6 +320,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095506989523476975, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095506989796431119, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
