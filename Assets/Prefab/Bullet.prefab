@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8385464720450973781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.88, y: -8.53, z: 0}
-  m_LocalScale: {x: 0.28397194, y: 0.2886693, z: 1}
+  m_LocalPosition: {x: -3.5374, y: -8.5129, z: 0}
+  m_LocalScale: {x: 6.0838256, y: 6.5020056, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,10 +72,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: e58b5819f913ad346978c79209c9b8c2, type: 3}
+  m_SortingLayerID: 988400693
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 8b190b836fc2c1a4e8ab380ef2243aa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,9 +99,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000059604645, y: 0.00000047683716}
+  m_Offset: {x: 0.014255061, y: 0.00000046288213}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.046284817
 --- !u!96 &8385464720450977704
 TrailRenderer:
   serializedVersion: 2
@@ -110,7 +110,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8385464720450973781}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -225,7 +225,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d96d3ab52e0d4e94b891218aa2433e69, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -242,3 +242,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac86d38469b574845bddc1a611228305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slowMotionTimeScale: 0.1
+  shashEffect: {fileID: 7975021528493612073, guid: a31adc500212a7f49b26c17997361ccd, type: 3}
