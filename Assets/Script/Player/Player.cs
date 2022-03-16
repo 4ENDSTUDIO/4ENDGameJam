@@ -15,9 +15,13 @@ public class Player : MonoBehaviour
     public float scoringRatio;
     private float lastPositionX;
 
+    [Header("Helath")]
+    public static float healthAmount;
+
 
     private void Start()
     {
+        healthAmount = 1;
         rig = GetComponent<Rigidbody2D>();
         lastPositionX = transform.position.x;
     }
@@ -37,8 +41,21 @@ public class Player : MonoBehaviour
             score.IncreaseCurrentScore(scoreIncrement);
             lastPositionX += distancePassed;
         }
+        if(healthAmount <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+        
     }
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "SmallBall")
+        {
+            healthAmount -= 0.1f;
+        }
+    }
+  
+
 
 
 }

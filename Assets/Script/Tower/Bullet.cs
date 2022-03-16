@@ -60,8 +60,12 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
         Instantiate(shashEffect, transform.position, Quaternion.identity);
        
-        
+
+
     }
+
+
+
 
 
 

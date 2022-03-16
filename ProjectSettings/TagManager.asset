@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Slowmo
   - Slow
+  - SmallBall
   layers:
   - Default
   - TransparentFX
