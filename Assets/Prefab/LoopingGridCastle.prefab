@@ -67,8 +67,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5380444759837227319}
   - component: {fileID: 5380444759837227316}
-  - component: {fileID: 1265133098695575204}
   - component: {fileID: 374165771196502298}
+  - component: {fileID: 3145704337139667738}
   m_Layer: 0
   m_Name: LoopingGridCastle
   m_TagString: Untagged
@@ -105,18 +105,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &1265133098695575204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5380444759837227317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a93650af2d556248873c84073bcfb21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &374165771196502298
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -139,6 +127,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &3145704337139667738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5380444759837227317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbc41a06715ffb4a95b425cf2b35986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5380444759919597185
 GameObject:
   m_ObjectHideFlags: 0

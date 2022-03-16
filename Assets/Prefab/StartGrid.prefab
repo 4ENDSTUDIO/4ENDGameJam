@@ -5539,8 +5539,8 @@ GameObject:
   - component: {fileID: 1398605182571479289}
   - component: {fileID: 3753838884880175235}
   - component: {fileID: 6365969667409887425}
-  - component: {fileID: 6381669493860230473}
   - component: {fileID: 6537013300455976546}
+  - component: {fileID: 8262090107720390637}
   m_Layer: 0
   m_Name: StartGrid
   m_TagString: Untagged
@@ -5625,18 +5625,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &6381669493860230473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398605182571479294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a93650af2d556248873c84073bcfb21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &6537013300455976546
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5661,3 +5649,15 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &8262090107720390637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398605182571479294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbc41a06715ffb4a95b425cf2b35986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,10 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TerrainControl : MonoBehaviour
+public class TerrainTemplateController : MonoBehaviour
 {
-
     private const float debugLineHeight = 10.0f;
 
     private void OnDrawGizmos()

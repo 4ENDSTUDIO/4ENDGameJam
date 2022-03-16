@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &100706878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 174462479}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Slow
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174462477}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.286463, y: -4.3669834, z: 0}
+  m_LocalPosition: {x: -8.6, y: -6.66, z: 0}
   m_LocalScale: {x: 3.6411593, y: 3.7234917, z: 1}
   m_Children: []
   m_Father: {fileID: 100706879}
@@ -229,10 +229,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2612278, y: 1.4073616}
+  m_Offset: {x: -1.2105405, y: 1.7968452}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -243,7 +243,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.84858704, y: 1.0617142}
+  m_Size: {x: 0.5850134, y: 1.3167678}
   m_EdgeRadius: 0
 --- !u!1 &187281909
 GameObject:
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 639604226}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Slow
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -735,7 +735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639604224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.97, y: -5.28, z: 0}
+  m_LocalPosition: {x: 15.97, y: -4.366983, z: 0}
   m_LocalScale: {x: 3.6411593, y: 3.7234917, z: 1}
   m_Children: []
   m_Father: {fileID: 31692807}
@@ -754,7 +754,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2612278, y: 1.4073616}
+  m_Offset: {x: -1.2257361, y: 1.274974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -765,7 +765,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.84858704, y: 1.0617142}
+  m_Size: {x: 0.5863242, y: 1.3264892}
   m_EdgeRadius: 0
 --- !u!1 &788407226
 GameObject:
@@ -1251,7 +1251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450361575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -0.5, z: 0}
+  m_LocalPosition: {x: 6.9, y: 1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 303498402}
@@ -1430,6 +1430,7 @@ GameObject:
   - component: {fileID: 1811938289}
   - component: {fileID: 1811938288}
   - component: {fileID: 1811938291}
+  - component: {fileID: 1811938292}
   m_Layer: 0
   m_Name: GroundContainer
   m_TagString: Untagged
@@ -1501,19 +1502,40 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811938287}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c194585afe880d34b9bca4fc796e435b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   terrainTemplates:
-  - {fileID: 1265133098695575204, guid: 9da212b242e4e4e469582e89af777f67, type: 3}
-  terrainTemplateWidth: 20
+  - {fileID: 0}
+  terrainTemplateWidth: 30
   earlyTerrainTemplater:
-  - {fileID: 6381669493860230473, guid: 4f4a3e3162e37194a9ec5d70342c17a4, type: 3}
+  - {fileID: 0}
   gameCamera: {fileID: 519420031}
-  areaStartOffSet: -5
-  areaEndOffset: 5
+  areaStartOffSet: -20
+  areaEndOffset: 20
+--- !u!114 &1811938292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811938287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d1f39d3bf7e4e48ba2db62b5e14581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrainTemplates:
+  - {fileID: 3145704337139667738, guid: 9da212b242e4e4e469582e89af777f67, type: 3}
+  terrainTemplateWidth: 40
+  gameCamera: {fileID: 519420031}
+  areaStartOffset: -30.9
+  areaEndOffset: 30
+  earlyTerrainTemplates:
+  - {fileID: 8262090107720390637, guid: 4f4a3e3162e37194a9ec5d70342c17a4, type: 3}
+  - {fileID: 8262090107720390637, guid: 4f4a3e3162e37194a9ec5d70342c17a4, type: 3}
 --- !u!1 &2108757504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1591,10 @@ PrefabInstance:
     - target: {fileID: 7484100049359623820, guid: 5879c0550fb29d84095bc333a38215cd, type: 3}
       propertyPath: m_Name
       value: Turet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484100049359623820, guid: 5879c0550fb29d84095bc333a38215cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7484100049359623821, guid: 5879c0550fb29d84095bc333a38215cd, type: 3}
       propertyPath: m_Pivot.x
