@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095506989523476969, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8095506989523476975, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_RootOrder
@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095506989796431119, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8095506989796431119, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_Collider
@@ -384,6 +384,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.24474904
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.67337734
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_AreaSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 898077695641056099, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764297166684397716, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 6567807197321648728, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -434,6 +470,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567807197321648730, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567807197474420204, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 6567807197986205682, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 9179975702587515921, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179975702587515921, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179975702587515921, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
