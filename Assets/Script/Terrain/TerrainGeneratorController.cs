@@ -118,13 +118,23 @@ public class TerrainGeneratorController : MonoBehaviour
         if (terrainToRemove != null)
         {
             spawnedTerrain.Remove(terrainToRemove);
-            Destroy(terrainToRemove);
+            //Destroy(terrainToRemove);
+            ReturnToPool(terrainToRemove);
         }
     }
 
     private void GenerateTerrain(float posX, TerrainTemplateController forceterrain = null)
     {
-        GameObject newTerrain = Instantiate(terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject, transform);
+        GameObject newTerrain = null;//Instantiate(terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject, transform);
+
+        if(forceterrain == null)
+        {
+            newTerrain = GenerateFromPool(terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject, transform);
+        }
+        else
+        {
+            newTerrain = GenerateFromPool(forceterrain.gameObject, transform);
+        }
 
         newTerrain.transform.position = new Vector2(posX, 0f);
 

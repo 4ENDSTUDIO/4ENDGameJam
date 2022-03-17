@@ -477,11 +477,11 @@ MonoBehaviour:
   - {fileID: 3860482587416626603, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
   - {fileID: -7558565242606975062, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
   terrainTemplateWidth: 39.6
+  earlyTerrainTemplates:
+  - {fileID: -7558565242606975062, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
   gameCamera: {fileID: 558325841}
   areaStartOffset: -30.9
   areaEndOffset: 30
-  earlyTerrainTemplates:
-  - {fileID: -7558565242606975062, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
 --- !u!114 &580716762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,8 +495,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainTemplates:
-  - {fileID: 6484548746489222189, guid: 99b80073af6b26a4c8e8c40b56a007fb, type: 3}
-  terrainTemplateWidth: 40
+  - {fileID: 4861169457315979100, guid: f7c1545d41390f94f924fe5f7c135d0e, type: 3}
+  - {fileID: 4861169457315979100, guid: f7c1545d41390f94f924fe5f7c135d0e, type: 3}
+  terrainTemplateWidth: 39.9
   earlyTerrainTemplater:
   - {fileID: 2541896151873287900, guid: 620c0b50aa7881c44b90dac2a0c10b3b, type: 3}
   gameCamera: {fileID: 558325841}
@@ -724,7 +725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652532382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.79, y: -2, z: 0}
+  m_LocalPosition: {x: -17.2, y: -2, z: 0}
   m_LocalScale: {x: 1.2102491, y: 1.5884614, z: 1}
   m_Children:
   - {fileID: 1460035310}
