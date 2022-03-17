@@ -1764,6 +1764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf549f9f083c28b4c89b1c8f351c5e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScore: 0
 --- !u!4 &1173549271
 Transform:
   m_ObjectHideFlags: 0
@@ -1957,6 +1958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 670657522}
     m_Modifications:
+    - target: {fileID: 1432238350745223915, guid: 42d469262b9ab42468ee745cb7ef4c26, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1173549270}
     - target: {fileID: 1432238350745223915, guid: 42d469262b9ab42468ee745cb7ef4c26, type: 3}
       propertyPath: healthbar
       value: 
