@@ -11,13 +11,30 @@ public class Bullet : MonoBehaviour
 
 
     public GameObject shashEffect;
+    public EnemyHealth healthbar;
+
+    [Header("HealthBullet")]
+    public float HitPoint;
+    public float maxHitPoint = 3;
+    
    
     void Start()
     {
+        HitPoint = maxHitPoint;
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
+        healthbar.SetHealth(HitPoint, maxHitPoint);
     }
-
+    public void takeHit(float damage)
+    {
+        HitPoint -= damage;
+        healthbar.SetHealth(HitPoint, maxHitPoint);
+        if (HitPoint <= 0 )
+        {
+            Destroy(gameObject);
+            Instantiate(shashEffect, transform.position, Quaternion.identity);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -57,8 +74,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        Destroy(gameObject);
-        Instantiate(shashEffect, transform.position, Quaternion.identity);
+        takeHit(1);
        
 
 
