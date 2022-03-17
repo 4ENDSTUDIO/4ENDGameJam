@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
       
         
     }
-    void GameOver()
+   public void GameOver()
     {
         // Set HighScore
         score.FinishScoring();
@@ -72,9 +72,22 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "SmallBall")
         {
             healthAmount -= 0.1f;
+
+        }
+        if (collision.gameObject.tag == "DIE")
+        {
+            GameOver();
         }
     }
-  
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "DIE")
+        {
+            GameOver();
+        }
+    }
+
 
 
 
