@@ -525,6 +525,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6567807197321648731, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_CellSize.x
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567807197321648731, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+      propertyPath: m_CellSize.y
+      value: 0.99
+      objectReference: {fileID: 0}
     - target: {fileID: 6567807197474420204, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
