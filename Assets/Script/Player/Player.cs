@@ -18,6 +18,13 @@ public class Player : MonoBehaviour
     [Header("Helath")]
     public static float healthAmount;
 
+    [Header("GameOver")]
+    public GameObject gameOverScreen;
+    public float fallPositionY;
+
+    [Header("Camera")]
+    public CameraFollow gameCamera;
+
 
     private void Start()
     {
@@ -44,7 +51,20 @@ public class Player : MonoBehaviour
         if(healthAmount <= 0)
         {
             gameObject.SetActive(false);
+            GameOver();
+            Time.timeScale = 1;
         }
+
+      
+        
+    }
+    void GameOver()
+    {
+        // Set HighScore
+        score.FinishScoring();
+        gameCamera.enabled = false;
+        gameOverScreen.SetActive(true);
+        this.enabled = false;
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
