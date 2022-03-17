@@ -245,6 +245,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowMotionTimeScale: 0.1
   shashEffect: {fileID: 7975021528493612073, guid: a31adc500212a7f49b26c17997361ccd, type: 3}
+  healthbar: {fileID: 0}
+  HitPoint: 0
+  maxHitPoint: 3
 --- !u!58 &2659582721007863696
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -43,7 +43,15 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if(collision.gameObject.tag =="Player")
+        {
+            Destroy(gameObject);
+        }
+        if(collision.gameObject.tag =="Swor")
+        {
+            takeHit(1);
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
