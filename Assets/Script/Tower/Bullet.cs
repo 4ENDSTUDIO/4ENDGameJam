@@ -16,7 +16,8 @@ public class Bullet : MonoBehaviour
     [Header("HealthBullet")]
     public float HitPoint;
     public float maxHitPoint = 3;
-    
+
+    public ScoreController score;
    
     void Start()
     {
@@ -32,7 +33,9 @@ public class Bullet : MonoBehaviour
         if (HitPoint <= 0 )
         {
             Destroy(gameObject);
+            score.currentScore += 3;
             Instantiate(shashEffect, transform.position, Quaternion.identity);
+            
         }
     }
     // Update is called once per frame
