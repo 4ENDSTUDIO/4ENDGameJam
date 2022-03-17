@@ -17,8 +17,10 @@ public class GameOverControlller : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             //RELOAD
+            Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+           
+
         }
     }
 }
