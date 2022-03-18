@@ -9,9 +9,10 @@ public class Bullet : MonoBehaviour
     private float startTimeScale;
     private float startFixedDeltaTime;
 
-
-    public GameObject shashEffect;
+    
+    public GameObject shashEffect, point;
     public EnemyHealth healthbar;
+   
 
     [Header("HealthBullet")]
     public float HitPoint;
@@ -21,6 +22,7 @@ public class Bullet : MonoBehaviour
    
     void Start()
     {
+        
         HitPoint = maxHitPoint;
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
@@ -35,7 +37,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             score.currentScore += 3;
             Instantiate(shashEffect, transform.position, Quaternion.identity);
-            
+            if (shashEffect == true)
+            {
+                Instantiate(point, transform.position, Quaternion.identity);
+            }
+
+           
+
+
         }
     }
     // Update is called once per frame
@@ -89,14 +98,7 @@ public class Bullet : MonoBehaviour
         Time.timeScale = startTimeScale;
         Time.fixedDeltaTime = startFixedDeltaTime;
     }
-    private void OnMouseDown()
-    {
-        takeHit(1);
-       
-
-
-    }
-
+  
 
 
 
