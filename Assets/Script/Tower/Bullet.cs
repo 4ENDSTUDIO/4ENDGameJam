@@ -8,10 +8,14 @@ public class Bullet : MonoBehaviour
     public float slowMotionTimeScale;
     private float startTimeScale;
     private float startFixedDeltaTime;
-
     
+
+    [Header("Enviroment")]
     public GameObject shashEffect, point;
+    [SerializeField]
+    public GameObject Danger;
     public EnemyHealth healthbar;
+    
    
 
     [Header("HealthBullet")]
@@ -82,10 +86,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Swor")
-        {
-            Destroy(gameObject);
-        }
+      
 
 
     }
@@ -98,11 +99,13 @@ public class Bullet : MonoBehaviour
     }
     void startSlowMo()
     {
+        Danger.SetActive(true);
         Time.timeScale = slowMotionTimeScale;
         Time.fixedDeltaTime = startFixedDeltaTime * slowMotionTimeScale;
     }
     void stopSlowmo()
     {
+        Danger.SetActive(false);
         Time.timeScale = startTimeScale;
         Time.fixedDeltaTime = startFixedDeltaTime;
     }
