@@ -2018,8 +2018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -531.9, y: -299.40002}
-  m_SizeDelta: {x: 1098.61, y: 635.345}
+  m_AnchoredPosition: {x: -538, y: -303}
+  m_SizeDelta: {x: 1699.8539, y: 1158.2832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642827063
 MonoBehaviour:
@@ -4487,6 +4487,7 @@ MonoBehaviour:
   areaStartOffset: -30.9
   areaEndOffset: 30
   earlyTerrainTemplates:
+  - {fileID: -7558565242606975062, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
   - {fileID: -7558565242606975062, guid: 5cdf5b8471b4a6a48a8752e87d062375, type: 3}
 --- !u!1 &1857609278
 GameObject:
