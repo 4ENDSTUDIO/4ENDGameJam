@@ -333,7 +333,7 @@ MonoBehaviour:
   Bullet: {fileID: 1342770269}
   FireRate: 0.5
   ShootPoint: {fileID: 1450361576}
-  Force: 100
+  Force: 80
   player: {fileID: 442240700}
   horizontalOffset: 9.4
 --- !u!224 &100706879
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893deb5d6ec327140a071ca0574b0f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveAccel: 10
+  moveAccel: 15
   maxSpeed: 3
   box: {fileID: 442240702}
   score: {fileID: 1173549270}
@@ -4353,7 +4353,9 @@ MonoBehaviour:
   terrainTemplates:
   - {fileID: 3860482587416626603, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
   - {fileID: 3860482587416626603, guid: 59b74bce49028d446be9f6c9b84691b3, type: 3}
-  terrainTemplateWidth: 39.6
+  - {fileID: 3860482587416626603, guid: be6e502eeb5ae1f4599e2e7efcd736c2, type: 3}
+  - {fileID: 5040863767025406902, guid: baf722149d664ca488e5445e62c9872d, type: 3}
+  terrainTemplateWidth: 38.8
   gameCamera: {fileID: 519420031}
   areaStartOffset: -30.9
   areaEndOffset: 30
@@ -4949,7 +4951,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bcadcaa2a13b8ee459c89b03fe2c73f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4957,7 +4959,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 58
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5080,6 +5082,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 670657522}
     m_Modifications:
+    - target: {fileID: 7484100049359623810, guid: 5879c0550fb29d84095bc333a38215cd, type: 3}
+      propertyPath: Force
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 7484100049359623810, guid: 5879c0550fb29d84095bc333a38215cd, type: 3}
       propertyPath: Bullet
       value: 
