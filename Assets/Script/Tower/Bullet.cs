@@ -82,6 +82,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Swor")
+        {
+            Destroy(gameObject);
+        }
 
 
     }

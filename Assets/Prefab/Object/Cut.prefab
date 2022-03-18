@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6034321963291780615}
   - component: {fileID: 6034321963291780614}
   - component: {fileID: 6034321963291780613}
+  - component: {fileID: -6355361595811642494}
   m_Layer: 0
   m_Name: Cut
   m_TagString: Swor
@@ -148,6 +149,28 @@ EdgeCollider2D:
   m_Points:
   - {x: -25.272093, y: 2.7846777}
   - {x: -24.972094, y: 2.7846777}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &-6355361595811642494
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034321963291780612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d96d3ab52e0d4e94b891218aa2433e69, type: 2}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -25.172092, y: 2.7846777}
+  - {x: -25.072094, y: 2.7846777}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

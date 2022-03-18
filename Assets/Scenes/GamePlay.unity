@@ -395,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8385464720450973781, guid: 42d469262b9ab42468ee745cb7ef4c26, type: 3}
       propertyPath: m_Name
-      value: Bullet (1)
+      value: Arrow
       objectReference: {fileID: 0}
     - target: {fileID: 8385464720450973782, guid: 42d469262b9ab42468ee745cb7ef4c26, type: 3}
       propertyPath: m_RootOrder
