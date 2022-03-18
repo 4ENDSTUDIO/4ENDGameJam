@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     public float moveAccel;
     public float maxSpeed;
+    private Animator anim;
+    public BoxCollider2D box;
 
     private Rigidbody2D rig;
 
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
         Vector2 velocityvector = rig.velocity;
         velocityvector.x = Mathf.Clamp(velocityvector.x + moveAccel * Time.deltaTime, 0.0f, maxSpeed);
         rig.velocity = velocityvector;
+        anim = gameObject.GetComponent<Animator>();
     }
     private void Update()
     {
@@ -48,11 +51,22 @@ public class Player : MonoBehaviour
             score.IncreaseCurrentScore(scoreIncrement);
             lastPositionX += distancePassed;
         }
+        if(healthAmount == 0)
+        {
+            healthAmount = 0;
+        }
+
+     
         if(healthAmount <= 0)
         {
-            gameObject.SetActive(false);
+            maxSpeed = 0f;
+            moveAccel = 0f;
             GameOver();
             Time.timeScale = 1;
+            anim.SetTrigger("Die");
+            rig.constraints = RigidbodyConstraints2D.FreezeAll;
+            box.enabled = false;
+
         }
 
       
@@ -72,8 +86,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "SmallBall")
         {
             healthAmount -= 0.1f;
+            anim.SetTrigger("Hurt");
 
         }
+        else
+        
         if (collision.gameObject.tag == "DIE")
         {
             GameOver();

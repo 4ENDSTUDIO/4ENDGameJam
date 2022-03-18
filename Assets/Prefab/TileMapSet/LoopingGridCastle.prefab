@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 4764297166684397716}
   m_Layer: 0
   m_Name: Env
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 2457214469365057853}
   m_Layer: 0
   m_Name: LightSet
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,7 +826,7 @@ GameObject:
   - component: {fileID: 3860482587416626603}
   m_Layer: 0
   m_Name: LoopingGridCastle
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 6567807197474420204}
   m_Layer: 0
   m_Name: Pilars
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 6567807197986205682}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6124,7 +6124,7 @@ GameObject:
   - component: {fileID: 6567807198285909499}
   m_Layer: 0
   m_Name: ColliderSet
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,7 @@ TagManager:
   - SmallBall
   - Swor
   - DIE
+  - Ground
   layers:
   - Default
   - TransparentFX

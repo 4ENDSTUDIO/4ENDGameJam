@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6652101985815412181}
   - component: {fileID: 840414115871576167}
+  - component: {fileID: -8031364714348621925}
   m_Layer: 0
   m_Name: StoneBreak
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8031364714348621925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7975021528493612073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5dfac4a17a0804d89037107a82d3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
