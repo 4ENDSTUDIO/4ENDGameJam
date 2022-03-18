@@ -12,11 +12,11 @@ public class Sword : MonoBehaviour
     private Vector2 swipeStart;
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(1))
         {
             dragging = true;
             swipeStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }else if(Input.GetMouseButtonUp(0)&& dragging)
+        }else if(Input.GetMouseButtonUp(1)&& dragging)
         {
             dragging = false;
             spawnCut();
