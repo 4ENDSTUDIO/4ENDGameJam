@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
             anim.SetTrigger("Die");
             rig.constraints = RigidbodyConstraints2D.FreezeAll;
             box.enabled = false;
+            SoundManager.playSound("Die");
 
         }
 
@@ -90,15 +91,19 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "SmallBall")
         {
+            SoundManager.playSound("Hurt");
             Health.health -= 5f;
             anim.SetTrigger("Hurt");
+           
 
         }
         else
         
         if (collision.gameObject.tag == "DIE")
         {
+            SoundManager.playSound("Die");
             GameOver();
+           
         }
     }
 
@@ -106,7 +111,9 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "DIE")
         {
+            SoundManager.playSound("Die");
             GameOver();
+           
         }
     }
 
