@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class Player : MonoBehaviour
     private float lastPositionX;
 
     [Header("Helath")]
-    public static float healthAmount;
+    //public static float healthAmount;
+  
 
     [Header("GameOver")]
     public GameObject gameOverScreen;
@@ -30,7 +32,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        healthAmount = 1;
+        
+      
         rig = GetComponent<Rigidbody2D>();
         lastPositionX = transform.position.x;
     }
@@ -43,6 +46,7 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        
         int distancePassed = Mathf.FloorToInt(transform.position.x - lastPositionX);
         int scoreIncrement = Mathf.FloorToInt(distancePassed / scoringRatio);
 
@@ -51,14 +55,15 @@ public class Player : MonoBehaviour
             score.IncreaseCurrentScore(scoreIncrement);
             lastPositionX += distancePassed;
         }
-        if(healthAmount == 0)
+        if(Health.health == 0)
         {
-            healthAmount = 0;
+            Health.health = 0;
         }
 
      
-        if(healthAmount <= 0)
+        if(Health.health <= 0)
         {
+            
             maxSpeed = 0f;
             moveAccel = 0f;
             GameOver();
@@ -85,7 +90,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "SmallBall")
         {
-            healthAmount -= 0.1f;
+            Health.health -= 5f;
             anim.SetTrigger("Hurt");
 
         }
