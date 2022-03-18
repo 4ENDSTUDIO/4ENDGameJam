@@ -1364,7 +1364,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0012921393, y: 0.003008008}
+  m_Offset: {x: -0.0012921393, y: 0.043507457}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1375,7 +1375,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5606546, y: 0.9639424}
+  m_Size: {x: 0.5606546, y: 0.8829435}
   m_EdgeRadius: 0
 --- !u!114 &442240703
 MonoBehaviour:
@@ -3524,6 +3524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainTemplates:
   - {fileID: 3860482587416626603, guid: 2a45f14381a8a7147b47a8a44bf140b6, type: 3}
+  - {fileID: 3860482587416626603, guid: 59b74bce49028d446be9f6c9b84691b3, type: 3}
   terrainTemplateWidth: 39.6
   gameCamera: {fileID: 519420031}
   areaStartOffset: -30.9

@@ -78,7 +78,11 @@ public class Bullet : MonoBehaviour
         {
             startSlowMo();
         }
-      
+        if (collision.gameObject.tag == "DIE")
+        {
+            Destroy(gameObject);
+        }
+
 
     }
     private void OnTriggerExit2D(Collider2D collision)
